@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
 
-		<link rel="icon" type="image/png" sizes="32x32" href="img/">
-    <!--Google fonts go here-->
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" type="text/css" href="reset.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>Basic Template</title>
-	</head>
-  
-  <body>
-    <header>
-      
-    </header>
-    
-    <main>
-      
-    </main>
-    
-    <footer>
-      
-      <script src="main.js"></script>
-    </footer>
-  </body>
+        <title>Frontend Mentor | Project tracking intro component</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo__holder">
+                <img src="img/logo.svg" alt="Company logo">
+            </div>
+
+            <div classs="mobile-menu__holder">
+                <button id="menu-button">
+                    <div id="nav-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="mobile-nav__dropdown">
+                    <nav class="menu-mobile" aria-label="navigation">
+                        <ul>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </nav>
+                    <div class="button button__login">
+                        <a href="#">Login</a>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="menu-desktop">
+
+            </nav>
+        </header>
+        
+        <main>
+            <section class="intro-section">
+                <div class="two-column__holder"><!--Set flex, space-between. Align-items center-->
+                    <div class="two-column__content"> <!--Gets padding-->
+                        <div class="two-column__text">
+                            <span class="flair">New</span>
+                            <span class="product__content">Monograph Dashboard</span>
+                            <h1>Powerful insights into your team</h1>
+                            <p>Project planning and time tracking for agile teams</p>
+                        </div>
+                        <div class="two-column__schedule">
+                            <div class="button button__schedule">
+                                <a href="#">Schedule a demo</a>
+                            </div>
+                            <span class="product__content"></span>
+                        </div>
+                    </div>
+                    <div class="two-column__image">
+                        <img src="img/illustration-devices.svg" alt="Illustration of mobile phone and laptop">
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+          <script src="main.js"></script>
+      </footer>
+    </body>
 </html>
