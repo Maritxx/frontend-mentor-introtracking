@@ -38,6 +38,8 @@ body::after {
 @media all and (max-width: 781px) {
   .button.button__login {
     border-top: 1px solid var(--text-secondary);
+    margin: 0 auto;
+    max-width: calc(100% - 80px);
   }
 }
 .button.button__login a {
@@ -89,6 +91,7 @@ header {
   padding: 40px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 @media all and (min-width: 782px) {
@@ -125,8 +128,8 @@ ul li {
 
 /*Mobile navigation*/
 #nav-icon {
-  width: 50px;
-  height: 45px;
+  width: 30px;
+  height: 25px;
   position: relative;
   z-index: 3;
   cursor: pointer;
@@ -153,13 +156,13 @@ ul li {
   top: 0px;
 }
 #nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
-  top: 13px;
+  top: 10px;
 }
 #nav-icon span:nth-child(4) {
-  top: 26px;
+  top: 20px;
 }
 #nav-icon.open span:nth-child(1), #nav-icon.open span:nth-child(4) {
-  top: 13px;
+  top: 10px;
   left: 50%;
   width: 0%;
 }
@@ -181,7 +184,7 @@ ul li {
   width: calc(100% - 80px);
   position: absolute;
   left: 40px;
-  top: 130px;
+  top: 114px;
   background-color: var(--bg-primary);
 }
 .menu-mobile__dropdown.expand {
@@ -189,6 +192,14 @@ ul li {
 }
 
 /*Intro section*/
+main {
+  display: flex;
+  align-items: center;
+}
+main .intro-section {
+  flex: 0 1 100%;
+}
+
 .two-column__holder {
   display: flex;
 }
