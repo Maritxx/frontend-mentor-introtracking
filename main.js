@@ -44,10 +44,8 @@ function navToggle() {
 //Adds the class of 'open' when it does not currently have this. Removes the class when it does.
 
 
-//MIGHT NEED $(function() {
 $("button#menu-button").click(function() {
 	expandMenu();
 	navToggle();
 });
-//MIGHT NEED });
 //Runs the functions 'expandMenu' and 'navToggle' when the button gets clicked.

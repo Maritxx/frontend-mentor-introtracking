@@ -27,23 +27,28 @@ body::after {
   padding: 10px;
 }
 .button.button__schedule {
-  display: inline-block;
   padding-right: 20px;
 }
 .button.button__schedule a {
   color: var(--bg-primary);
   background-color: var(--button-primary);
-  border-radius: 10px;
+  border-radius: 5px;
+  min-width: 155px;
+  text-align: center;
 }
 @media all and (max-width: 781px) {
   .button.button__login {
     border-top: 1px solid var(--text-secondary);
     margin: 0 auto;
     max-width: calc(100% - 80px);
+    padding: 15px;
   }
 }
 .button.button__login a {
   color: var(--text-secondary);
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 1.125rem;
 }
 
 /*Font Styles*/
@@ -52,13 +57,13 @@ h1 {
   font-weight: 700;
   color: var(--heading-primary);
   text-transform: uppercase;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   line-height: 1;
   padding: 20px 0px;
 }
 @media all and (min-width: 782px) {
   h1 {
-    font-size: 2.8125rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -100,15 +105,23 @@ header {
 @media all and (min-width: 782px) {
   ul {
     display: flex;
+    padding-right: 50px;
   }
 }
 ul li {
   font-family: var(--heading-font);
   font-weight: 700;
+  font-size: 1.125rem;
   text-transform: uppercase;
   color: var(--heading-primary);
   text-align: center;
   padding: 15px;
+  letter-spacing: 0.1rem;
+}
+@media all and (max-width: 781px) {
+  ul li {
+    padding: 20px;
+  }
 }
 
 .menu-holder__mobile {
@@ -189,6 +202,10 @@ ul li {
   left: 40px;
   top: 114px;
   background-color: var(--bg-primary);
+  border-radius: 5px;
+  -webkit-box-shadow: -7px 11px 23px -6px rgb(91, 95, 113);
+  -moz-box-shadow: -7px 11px 23px -6px rgb(91, 95, 113);
+  box-shadow: -7px 11px 23px -6px rgb(91, 95, 113);
 }
 .menu-mobile__dropdown.expand {
   display: block;
@@ -235,6 +252,8 @@ main .intro-section {
 
 .two-column__schedule {
   padding-top: 20px;
+  display: flex;
+  align-items: center;
 }
 @media all and (min-width: 782px) {
   .two-column__schedule {
