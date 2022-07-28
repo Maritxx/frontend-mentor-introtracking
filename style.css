@@ -270,8 +270,11 @@ main .intro-section {
   }
 }
 
-.two-column__image {
-  flex: 0 1 100%;
+@media all and (max-width: 781px) {
+  .two-column__image {
+    flex: 0 1 100%;
+    padding-top: 50px;
+  }
 }
 @media all and (min-width: 782px) {
   .two-column__image {
