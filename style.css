@@ -270,7 +270,7 @@ main .intro-section {
   }
 }
 .two-column__image img {
-  max-width: 120%;
+  width: 120%;
   display: block;
 }
 
