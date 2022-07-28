@@ -88,6 +88,7 @@ span.flair {
 header {
   padding: 40px;
   display: flex;
+  align-items: center;
 }
 
 @media all and (min-width: 782px) {
@@ -117,7 +118,8 @@ ul li {
 }
 @media all and (min-width: 782px) {
   .menu-holder__desktop {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -172,6 +174,18 @@ ul li {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+.menu-mobile__dropdown {
+  display: none;
+  width: calc(100% - 80px);
+  position: absolute;
+  left: 40px;
+  top: 130px;
+  background-color: var(--bg-primary);
+}
+.menu-mobile__dropdown.expand {
+  display: block;
 }
 
 /*Intro section*/
