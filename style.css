@@ -36,6 +36,9 @@ body::after {
   min-width: 155px;
   text-align: center;
 }
+.button.button__schedule a:hover {
+  background-color: rgba(255, 92, 92, 0.65);
+}
 @media all and (max-width: 781px) {
   .button.button__login {
     border-top: 1px solid var(--text-secondary);
@@ -49,6 +52,9 @@ body::after {
   text-align: center;
   letter-spacing: 0.1rem;
   font-size: 1.125rem;
+}
+.button.button__login a:hover {
+  text-decoration: underline;
 }
 
 /*Font Styles*/
@@ -117,6 +123,9 @@ ul li {
   text-align: center;
   padding: 15px;
   letter-spacing: 0.1rem;
+}
+ul lia:hover {
+  text-decoration: underline;
 }
 @media all and (max-width: 781px) {
   ul li {

@@ -38,6 +38,10 @@ body {
 			border-radius: 5px;
 			min-width: 155px;
 			text-align: center;
+
+			&:hover {
+				background-color: rgba(255, 92, 92, 0.65);
+			}
 		}
 	}
 
@@ -54,6 +58,10 @@ body {
 			text-align: center;
 			letter-spacing: 0.1rem;
 			font-size: 1.125rem;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -138,6 +146,10 @@ ul {
 		text-align: center;
 		padding: 15px;
 		letter-spacing: 0.1rem;
+
+		&a:hover {
+			text-decoration: underline;
+		}
 
 		@media all and (max-width: 781px) {
 			padding: 20px;
