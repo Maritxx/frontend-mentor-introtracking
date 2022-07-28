@@ -127,6 +127,28 @@ ul {
 }
 
 
+.menu-holder {
+	&__mobile {
+		display: block;
+	}
+
+	&__desktop {
+		display: none;
+	}
+
+	@media all and (min-width: 782px) {
+		&__mobile {
+			display: none;
+		}
+
+		&__desktop {
+			display: block;
+		}
+	}
+}
+
+
+
 /*Mobile navigation*/
 #nav-icon {
 	width: 50px;
@@ -169,37 +191,27 @@ ul {
 
 	&.open {
 		span {
-			
+			&:nth-child(1), &:nth-child(4) {
+				top: 13px;
+				left: 50%;
+				width: 0%;
+			}
+
+			&:nth-child(2) {
+				-webkit-transform: rotate(45deg);
+				-moz-transform: rotate(45deg);
+				-o-transform: rotate(45deg);
+				transform: rotate(45deg);	
+			}
+
+			&:nth-child(3) {
+				-webkit-transform: rotate(-45deg);
+				-moz-transform: rotate(-45deg);
+				-o-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+			}
 		}
 	}
-}
-
-
-
-#nav-icon.open span:nth-child(1) {
-	top: 13px;
-	width: 0%;
-	left: 50%;
-}
-
-#nav-icon.open span:nth-child(2) {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-#nav-icon.open span:nth-child(3) {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-
-#nav-icon.open span:nth-child(4) {
-	top: 13px;
-	width: 0%;
-	left: 50%;
 }
 
 
