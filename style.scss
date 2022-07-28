@@ -130,18 +130,16 @@ ul {
 .menu-holder {
 	&__mobile {
 		display: block;
+
+		@media all and (min-width: 782px) {
+			display: none;
+		}
 	}
 
 	&__desktop {
 		display: none;
-	}
 
-	@media all and (min-width: 782px) {
-		&__mobile {
-			display: none;
-		}
-
-		&__desktop {
+		@media all and (min-width: 782px) {
 			display: block;
 		}
 	}

@@ -107,13 +107,15 @@ ul li {
 .menu-holder__mobile {
   display: block;
 }
-.menu-holder__desktop {
-  display: none;
-}
 @media all and (min-width: 782px) {
   .menu-holder__mobile {
     display: none;
   }
+}
+.menu-holder__desktop {
+  display: none;
+}
+@media all and (min-width: 782px) {
   .menu-holder__desktop {
     display: block;
   }
