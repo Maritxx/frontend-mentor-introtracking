@@ -53,6 +53,8 @@ h1 {
   color: var(--heading-primary);
   text-transform: uppercase;
   font-size: 1.75rem;
+  line-height: 1;
+  padding: 20px 0px;
 }
 @media all and (min-width: 782px) {
   h1 {
@@ -70,7 +72,8 @@ span.product__content {
   font-size: 0.875rem;
   color: var(--text-secondary);
   text-transform: uppercase;
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.2rem;
 }
 
 span.flair {
@@ -230,6 +233,15 @@ main .intro-section {
   margin: 0 auto;
 }
 
+.two-column__schedule {
+  padding-top: 20px;
+}
+@media all and (min-width: 782px) {
+  .two-column__schedule {
+    padding-top: 50px;
+  }
+}
+
 .two-column__image {
   flex: 0 1 100%;
 }
@@ -239,7 +251,7 @@ main .intro-section {
   }
 }
 .two-column__image img {
-  max-width: 110%;
+  max-width: 120%;
   display: block;
 }
 

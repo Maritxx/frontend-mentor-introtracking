@@ -65,6 +65,8 @@ h1 {
 	color: var(--heading-primary);
 	text-transform: uppercase;
 	font-size: 1.75rem;
+	line-height: 1;
+	padding: 20px 0px;
 
 	@media all and (min-width: 782px) {
 		font-size: 2.8125rem;
@@ -83,7 +85,8 @@ span.product__content {
 	font-size: 0.875rem;
 	color: var(--text-secondary);
 	text-transform: uppercase;
-	letter-spacing: 0.125rem;
+	letter-spacing: 0.3rem;
+	word-spacing: 0.2rem;
 }
 
 
@@ -277,6 +280,14 @@ main {
 	margin: 0 auto;
 }
 
+.two-column__schedule {
+	padding-top: 20px;
+
+	@media all and (min-width: 782px) {
+		padding-top: 50px;
+	}
+}
+
 
 .two-column__image {
 	flex: 0 1 100%;
@@ -286,7 +297,7 @@ main {
 	}
 
 	img {
-		max-width: 110%;
+		max-width: 120%;
 		display: block;
 
 	}	
