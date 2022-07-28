@@ -5,14 +5,15 @@ body {
 	font-family: var(--main-font);
 
 	&::after {
-	content: "";
-	position: absolute;
-	background-color: var(--bg-secondary);
-	border-bottom-left-radius: 90px;
-	top: 0;
-	right: 0;
-	height: 50vh;
-	width: 50vw;
+		content: "";
+		position: absolute;
+		z-index: -1;
+		background-color: var(--bg-secondary);
+		border-bottom-left-radius: 90px;
+		top: 0;
+		right: 0;
+		height: 50vh;
+		width: 50vw;
 	}
 }
 
@@ -26,6 +27,27 @@ body {
 		font-weight: 700;
 		text-transform: uppercase;
 		padding: 10px;
+	}
+
+	&.button__schedule {
+		display: inline-block;
+		padding-right: 20px;
+
+		a {
+			color: var(--bg-primary);
+			background-color: var(--button-primary);
+			border-radius: 10px;
+		}
+	}
+
+	&.button__login {
+		@media all and (max-width: 781px) {
+			border-top: 1px solid var(--text-secondary);
+		}	
+
+		a {
+			color: var(--text-secondary);
+		}
 	}
 }
 
@@ -62,6 +84,7 @@ span.product__content {
 	letter-spacing: 0.125rem;
 }
 
+
 span.flair {
 	font-family: var(--heading-font);
 	font-size: 0.875rem;
@@ -69,7 +92,7 @@ span.flair {
 	color: var(--bg-primary);
 	text-transform: uppercase;
 	letter-spacing: 0.125rem;
-	padding: 3px;
+	padding: 3px 7px;
 	margin-right: 10px;
 	background-color: var(--heading-primary);
 	border-radius: 25px;
@@ -79,7 +102,14 @@ span.flair {
 
 
 
+
 /*Header*/
+header {
+	padding: 40px;
+	display: flex;
+}
+
+
 ul {
 
 	@media all and (min-width: 782px) {
@@ -89,22 +119,13 @@ ul {
 	li {
 		font-family: var(--heading-font);
 		font-weight: 700;
+		text-transform: uppercase;
 		color: var(--heading-primary);
 		text-align: center;
 		padding: 15px;
 	}
 }
 
-
-.button__login {
-	@media all and (max-width: 781px) {
-		border-top: 1px solid var(--text-secondary);
-	}	
-
-	a {
-		color: var(--text-secondary);
-	}
-}
 
 
 
@@ -113,8 +134,13 @@ ul {
 
 /*Intro section*/
 .two-column__holder {
+	display: flex;
+
+	@media all and (max-width: 781px) {
+		flex-direction: column-reverse;
+	}
+
 	@media all and (min-width: 782px) {
-		display: flex;
 		align-items: center;
 		justify-content: space-between;
 	}
@@ -122,6 +148,7 @@ ul {
 
 
 .two-column__content {
+	flex: 0 1 100%;
 	padding: 40px;
 
 	@media all and (min-width: 782px) {
@@ -132,16 +159,22 @@ ul {
 
 .two-column__text, .two-column__schedule {
 	max-width: 480px;
+	margin: 0 auto;
 }
 
 
-.button__schedule {
-	display: inline-block;
-	padding-right: 20px;
+.two-column__image {
+	flex: 0 1 100%;
 
-	a {
-		color: var(--bg-primary);
-		background-color: var(--button-primary);
-		border-radius: 10px;
+	@media all and (min-width: 782px) {
+		flex: 0 1 50%;
 	}
+
+	img {
+		max-width: 110%;
+		display: block;
+
+	}	
 }
+
+

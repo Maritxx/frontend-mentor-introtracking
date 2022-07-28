@@ -19,13 +19,11 @@ function pageHeight()  {
 	//Changes the min-height of 'main' to be 100vh minus the height of the footer and header.
 }
 
-$(window).on("load resize orientationchange", function ()
+$(window).on("load resize orientationchange", function () {
+  pageHeight();
+});	
 //The 'window' selector represents an open window in the browser.
 //The .on action attaches one or more event handlers to the selected element.
 //The function within the .on action specifies that it needs a function to run.
 //Runs the pageHeight function when the page gets loaded, resized or if the orientation (portrait or landscape) is changed. 
 
-
-$(window).on("load resize", function () {
-  pageHeight();
-});

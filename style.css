@@ -7,6 +7,7 @@ body {
 body::after {
   content: "";
   position: absolute;
+  z-index: -1;
   background-color: var(--bg-secondary);
   border-bottom-left-radius: 90px;
   top: 0;
@@ -24,6 +25,23 @@ body::after {
   font-weight: 700;
   text-transform: uppercase;
   padding: 10px;
+}
+.button.button__schedule {
+  display: inline-block;
+  padding-right: 20px;
+}
+.button.button__schedule a {
+  color: var(--bg-primary);
+  background-color: var(--button-primary);
+  border-radius: 10px;
+}
+@media all and (max-width: 781px) {
+  .button.button__login {
+    border-top: 1px solid var(--text-secondary);
+  }
+}
+.button.button__login a {
+  color: var(--text-secondary);
 }
 
 /*Font Styles*/
@@ -60,13 +78,18 @@ span.flair {
   color: var(--bg-primary);
   text-transform: uppercase;
   letter-spacing: 0.125rem;
-  padding: 3px;
+  padding: 3px 7px;
   margin-right: 10px;
   background-color: var(--heading-primary);
   border-radius: 25px;
 }
 
 /*Header*/
+header {
+  padding: 40px;
+  display: flex;
+}
+
 @media all and (min-width: 782px) {
   ul {
     display: flex;
@@ -75,30 +98,30 @@ span.flair {
 ul li {
   font-family: var(--heading-font);
   font-weight: 700;
+  text-transform: uppercase;
   color: var(--heading-primary);
   text-align: center;
   padding: 15px;
 }
 
+/*Intro section*/
+.two-column__holder {
+  display: flex;
+}
 @media all and (max-width: 781px) {
-  .button__login {
-    border-top: 1px solid var(--text-secondary);
+  .two-column__holder {
+    flex-direction: column-reverse;
   }
 }
-.button__login a {
-  color: var(--text-secondary);
-}
-
-/*Intro section*/
 @media all and (min-width: 782px) {
   .two-column__holder {
-    display: flex;
     align-items: center;
     justify-content: space-between;
   }
 }
 
 .two-column__content {
+  flex: 0 1 100%;
   padding: 40px;
 }
 @media all and (min-width: 782px) {
@@ -109,16 +132,20 @@ ul li {
 
 .two-column__text, .two-column__schedule {
   max-width: 480px;
+  margin: 0 auto;
 }
 
-.button__schedule {
-  display: inline-block;
-  padding-right: 20px;
+.two-column__image {
+  flex: 0 1 100%;
 }
-.button__schedule a {
-  color: var(--bg-primary);
-  background-color: var(--button-primary);
-  border-radius: 10px;
+@media all and (min-width: 782px) {
+  .two-column__image {
+    flex: 0 1 50%;
+  }
+}
+.two-column__image img {
+  max-width: 110%;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
